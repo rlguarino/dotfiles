@@ -16,5 +16,5 @@ host cs
   User rlg8826
 
 host rgdev
-  HostName 129.168.169.87
+  HostName 192.168.169.87
   User ross
