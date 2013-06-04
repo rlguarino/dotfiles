@@ -14,3 +14,7 @@ host thel
 host cs
   HostName idaho.cs.rit.edu
   User rlg8826
+
+host rgdev
+  HostName 129.168.169.87
+  User ross
