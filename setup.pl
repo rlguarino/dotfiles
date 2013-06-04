@@ -13,6 +13,8 @@ system("ln -s ~/dotfiles/tmux/tmux.conf ~/.tmux.conf");
 system("ln -s ~/dotfiles/ssh/config ~/.ssh/config");
 system("chmod 644 ~/.ssh/config");
 
+system("ln -s $homedir/dotfiles/vim/vimrc.local $homedir/.vimrc.local");
+system("ln -s $homedir/dotfiles/zsh/override.zsh $homedir/.oh-my-zsh/custom/override.zsh");
 print "Setup Complete\n";
 print "Please Restart Terminal for Changes to Take Effect\n";
 
