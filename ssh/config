@@ -1,0 +1,16 @@
+host rancor
+  HostName rancor.csh.rit.edu
+  User eos
+
+host lwell
+  HostName lwell.csh.rit.edu
+  User ross
+
+host thel
+  HostName thel.csh.rit.edu
+  User ross
+  Port 8118
+
+host cs
+  HostName idaho.cs.rit.edu
+  User rlg8826
