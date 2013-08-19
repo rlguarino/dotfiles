@@ -17,7 +17,7 @@ system("chmod 644 ~/.ssh/config");
 system("ln -s ~/dotfiles/fish/config.fish ~/.config/fish/config.fish");
 system("ln -s $homedir/dotfiles/vim/vimrc.local $homedir/.vimrc.local");
 system("ln -s $homedir/dotfiles/zsh/override.zsh $homedir/.oh-my-zsh/custom/override.zsh");
-system("sudo su -c \'echo \"/usr/bin/fish/\" >> /etc/shells\'");
+system("sudo su -c \'echo \"/usr/local/bin/fish\" >> /etc/shells\'");
 if($argc >= 2){
     if( $type eq "-s"){
         system("chsh -s $arg1");
