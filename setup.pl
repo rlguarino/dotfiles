@@ -18,19 +18,17 @@ system("ln -s ~/dotfiles/fish/config.fish ~/.config/fish/config.fish");
 system("ln -s $homedir/dotfiles/vim/vimrc.local $homedir/.vimrc.local");
 system("ln -s $homedir/dotfiles/zsh/override.zsh $homedir/.oh-my-zsh/custom/override.zsh");
 system("sudo su -c \'echo \"/usr/bin/fish/\" >> /etc/shells\'");
-print "Type : $type\n";
-print "Type : $arg1\n";
-print "Setup Complete\n";
 if($argc >= 2){
     if( $type eq "-s"){
         system("chsh -s $arg1");
     }
 }
-print "Please Restart Terminal for Changes to Take Effect\n";
 if($argc != 2){
     print "run \'chsh -s /usr/bin/fish\' to change your shell to fish\n";
     print "or \'chsh -s /bin/zsh\' to change your shell to zsh\n";
 }
+print "Setup Complete\n";
+print "Please Restart Terminal for Changes to Take Effect\n";
 print "To remove the numbers plugin run BundleClean and then rm -rf ~/.vimview\n";
 print "View the github page https://github.com/fish-shell/fish-shell.git\n";
 print "Have Fun!";
