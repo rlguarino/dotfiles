@@ -16,5 +16,5 @@ export EDITOR=vim
 export VISUAL=vim
 export TERM=xterm-256color
 
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/sbin/:/usr/local/go/bin:$PATH
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/sbin/:/usr/local/go/bin:$HOME/source/go/bin:$PATH
 #### END OF FILE
