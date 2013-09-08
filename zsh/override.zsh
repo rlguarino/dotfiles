@@ -17,4 +17,5 @@ export VISUAL=vim
 export TERM=xterm-256color
 
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/sbin/:/usr/local/go/bin:$HOME/source/go/bin:$PATH
+export PATH=/opt/cjdns/:$PATH
 #### END OF FILE
