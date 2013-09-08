@@ -10,6 +10,7 @@ source /usr/local/bin/virtualenvwrapper.sh
 
 #Set go development variables
 export GOROOT=/usr/local/go
+export GOPATH=$HOME/source/go
 
 export EDITOR=vim
 export VISUAL=vim
