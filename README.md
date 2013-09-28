@@ -1,11 +1,10 @@
 .dotfiles
 =========
-###Written By [Ross Guarino](https://github.com/rosslg)
+###Written By [Ross Guarino](https://github.com/rlguarino)
+###Forked from [Ethan House](http://github.com/ehouse)
 [![endorse](http://api.coderwall.com/rosslg/endorsecount.png)](http://coderwall.com/rosslg)
 
 My Personalized Environment Configuration Files
-I added fish to the configuration but I am leabing zsh for compatability with other systems.
-If you do not wish to use fish then you do not need to worry when that line in the install fails.
 
 ###Clone
 Clone this repo using the command: 
@@ -19,10 +18,12 @@ Run the install located in the bin folder of the repo
 ./dotfiles/setup.pl
 '''
 
-###Setting up vim
-To install vim bundles start vim then run:
-:BuneleInstall
-For more information visit the [project page](http://github.com/gmarik/vundle)
+###Troubshooting
+If you get some errors along the lines of
+'''
+stow: ERROR: canon_path: cannot chdir to dotfiles from /usr/home/rlguarino/dotfiles (No such file or directory)
+'''
+It is because you are not running the script from your home directory. 'cd ~' first then try '.dotfiles/setup.pl' again
 
 ###Dependencies
-fish, zsh, tmux, vim
+[GNU Stow](http://www.gnu.org/software/stow/)
