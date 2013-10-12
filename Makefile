@@ -13,6 +13,7 @@ clean:
 	unlink $(HOME)/.vimrc.local
 	rm -rf $(HOME)/.vimrc
 	rm -rf $(HOME)/.vimrc.bundles
+	unlink $(HOME)/.vimrc.backup
 	unlink $(HOME)/.tmux.conf
 	unlink $(HOME)/.oh-my-zsh/custom/override.zsh
 	unlink $(HOME)/.ssh/config
