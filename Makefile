@@ -1,8 +1,22 @@
 .Phony: pall update vim tmux zsh ssh emacsp
 .IGNORE: vim tmux zsh ssh emacs
 
+.DEFAULT: install
+install: tmux zsh ssh emacs
+	@echo "Finished install"
+
 all: vim tmux zsh ssh emacs
 	@echo "Finised configuration"
+
+clean:
+	@echo "Cleaning up"
+	unlink $(HOME)/.vimrc.local
+	rm -rf $(HOME)/.vimrc
+	rm -rf $(HOME)/.vimrc.bundles
+	unlink $(HOME)/.tmux.conf
+	unlink $(HOME)/.oh-my-zsh/custom/override.zsh
+	unlink $(HOME)/.ssh/config
+	unlink $(HOME)/.emacs
 
 vim: vimcheck viminstall
 	@echo "Configuring vim"
@@ -23,6 +37,7 @@ ssh: sshcheck
 	@echo "Configuring ssh"
 	unlink $(HOME)/.ssh/config
 	ln -s $(HOME)/dotfiles/ssh/ssh.conf $(HOME)/.ssh/config
+	chmod 664 $(HOME)/.ssh/config
 
 emacs: emacscheck
 	@echo "Configuring emacs"
