@@ -8,22 +8,22 @@ My Personalized Environment Configuration Files
 
 ###Clone
 Clone this repo using the command: 
-'''
-git clone https://github.com/rguarino/dotfiles.git
-'''
+```
+git clone https://github.com/rguarino/dotfiles.git $HOME/dotfiles
+```
+The make files expect the repo to be located in $HOMe/dotfiles
 
 ###Setup
-Run the install located in the bin folder of the repo
-'''
-./dotfiles/setup.pl
-'''
+To install use GNU make
 
-###Troubshooting
-If you get some errors along the lines of
-'''
-stow: ERROR: canon_path: cannot chdir to dotfiles from /usr/home/rlguarino/dotfiles (No such file or directory)
-'''
-It is because you are not running the script from your home directory. 'cd ~' first then try '.dotfiles/setup.pl' again
+Usage:
+```
+cd $HOME/dotfiles
+make <program> <program>
+```
 
-###Dependencies
-[GNU Stow](http://www.gnu.org/software/stow/)
+There are some convenience make targets
+
+To remove the configurations run `make clean` <br />
+To install all configurations run `make all` <br />
+To install my default configurations (all but vim) run `make install` <br />
