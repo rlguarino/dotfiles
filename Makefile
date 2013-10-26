@@ -1,4 +1,4 @@
-.Phony: pall update vim tmux zsh ssh emacsp
+.Phony: pall update vim tmux zsh ssh emacs
 .IGNORE: vim tmux zsh ssh emacs
 
 .DEFAULT: install
@@ -43,20 +43,21 @@ ssh: sshcheck
 emacs: emacscheck
 	@echo "Configuring emacs"
 	unlink $(HOME)/.emacs
-	ln -s $(HOME)/dotfiles/emacs/emacs $(HOME)/.emacs
+	ln -s $(HOME)/dotfiles/emacs/emacs $	(HOME)/.emacs
 
-zshinstall:
+zshinstall: curlcheck
 	curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
 	@touch zshinstall
 
-viminstall:
+viminstall: curlcheck
 	rm spf13-vim.sh
 	curl http://j.mp/spf13-vim3 -L > spf13-vim.sh && sh spf13-vim.sh
 	@touch viminstall
 
-.Phony: vimcheck tmuxcheck zshcheck emacscheck
+.Phony: vimcheck tmuxcheck zshcheck emacscheck curlcheck
 vimcheck:
 	$(HOME)/dotfiles/install/vim
+	which vim >> /dev/null
 
 tmuxcheck:
 	$(HOME)/dotfiles/install/tmux
@@ -69,3 +70,6 @@ emacscheck:
 
 sshcheck:
 	$(HOME)/dotfiles/install/ssh
+
+curlcheck:
+	which curl >> /dev/null
