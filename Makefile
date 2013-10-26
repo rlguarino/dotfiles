@@ -72,4 +72,5 @@ sshcheck:
 	$(HOME)/dotfiles/install/ssh
 
 curlcheck:
+	$(HOME)/dotfiles/install/curl
 	which curl >> /dev/null
