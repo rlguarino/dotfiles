@@ -38,7 +38,7 @@ ssh: sshcheck
 	@echo "Configuring ssh"
 	unlink $(HOME)/.ssh/config
 	ln -s $(HOME)/dotfiles/ssh/ssh.conf $(HOME)/.ssh/config
-	chmod 664 $(HOME)/.ssh/config
+	chmod 600 $(HOME)/.ssh/config
 
 emacs: emacscheck
 	@echo "Configuring emacs"
