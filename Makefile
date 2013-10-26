@@ -73,4 +73,3 @@ sshcheck:
 
 curlcheck:
 	$(HOME)/dotfiles/install/curl
-	which curl >> /dev/null
