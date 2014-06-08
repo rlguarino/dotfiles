@@ -15,6 +15,7 @@ fi
 }
 
 which $PROGRAM &> /dev/null
+mkdir -p ~/.ssh
 
 if [ $? == 0 ]; then
         echo "$PROGRAM already installed"
