@@ -43,7 +43,7 @@ ssh: sshcheck
 emacs: emacscheck
 	@echo "Configuring emacs"
 	unlink $(HOME)/.emacs
-	ln -s $(HOME)/dotfiles/emacs/emacs $	(HOME)/.emacs
+	ln -s $(HOME)/dotfiles/emacs/emacs $(HOME)/.emacs
 
 zshinstall: curlcheck
 	curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
@@ -72,4 +72,4 @@ sshcheck:
 	$(HOME)/dotfiles/install/ssh
 
 curlcheck:
-	which curl >> /dev/null
+	$(HOME)/dotfiles/install/curl

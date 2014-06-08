@@ -1,5 +1,5 @@
 # Customize to your needs...
-ZSH_THEME="gentoo"
+ZSH_THEME="nicoulaj"
 unsetopt correct_all
 
 alias tmux="tmux -2"

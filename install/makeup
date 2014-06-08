@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
-#Check to see if tmux is installed, 
-# if not try to install tmux.
+#Check to see if makeup is installed, 
+# if not try to install makeup.
 #Copyright (c) 2013 Ross Guarino
 
-PROGRAM="tmux"
+PROGRAM="makeup"
 SYSTEM=$(uname -s)
 
 success() {
@@ -38,7 +38,7 @@ if [ $SYSTEM = "Linux" ]; then
    fi
 fi
 if [ $SYSTEM = "FreeBSD" ]; then
-   sudo portmaster sysutils/tmux
+   sudo portmaster program/program
    res=$?
    success
    exit $res
