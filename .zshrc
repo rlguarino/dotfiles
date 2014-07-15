@@ -11,4 +11,9 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+export PATH=$HOME/source/go/bin:$PATH
 
+export GOPATH=$HOME/source/go
+
+alias tmux="tmux -2"
+alias emacs="emacs -nw"
