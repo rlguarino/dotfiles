@@ -5,6 +5,9 @@
 [core]
 	ignorecase = false
 
+[credential]
+	helper=cache
+
 [color]
 	diff = auto
 	branch = auto
