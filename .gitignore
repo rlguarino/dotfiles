@@ -23,6 +23,8 @@
 
 !.tmux.conf
 
+!.netrc
+
 !.dotfiles-install
 
 .*.swp
