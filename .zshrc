@@ -1,6 +1,7 @@
 #
 # Executes commands at the start of an interactive session.
 #
+# This file is sourced by interactive shells. It should define aliases, functions, shell options, and key bindings.
 # Authors:
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
@@ -11,9 +12,21 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
-export PATH=$HOME/source/go/bin:$PATH
 
-export GOPATH=$HOME/source/go
+#
+# Less
+#
+
+# Set the default Less options.
+# Mouse-wheel scrolling has been disabled by -X (disable screen clearing).
+# Remove -X and -F (exit if the content fits on one screen) to enable it.
+export LESS='-F -g -i -M -R -S -w -X -z-4'
+
+# Set the Less input preprocessor.
+if (( $+commands[lesspipe.sh] )); then
+  export LESSOPEN='| /usr/bin/env lesspipe.sh %s 2>&-'
+fi
+
 
 autoload -U up-line-or-beginning-search
 autoload -U down-line-or-beginning-search
