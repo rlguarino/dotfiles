@@ -33,12 +33,11 @@ typeset -gU  path gopath
 path=(
   /usr/local/{bin,sbin}
   $HOME/bin
-  $HOME/go/bin
   $path
 )
 
 gopath=(
-    $HOME/go
+    $HOME
 )
 
 export GOPATH=$gopath
