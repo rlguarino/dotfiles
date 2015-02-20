@@ -1,3 +1,10 @@
 [submodule ".zprezto"]
 	path = .zprezto
 	url = https://github.com/sorin-ionescu/prezto.git
+
+[submodule "emacs.d/go-mode"]
+	path = emacs.d/go-mode
+	url = https://github.com/dominikh/go-mode.el.git
+[submodule ".emacs.d/go-mode"]
+	path = .emacs.d/go-mode
+	url = https://github.com/dominikh/go-mode.el.git
