@@ -11,6 +11,7 @@
 			  company
 			  company-go
 			  go-eldoc
+			  monokai-theme
 			  go-errcheck
 			  go-play
 			  go-autocomplete
