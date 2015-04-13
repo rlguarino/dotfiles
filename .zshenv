@@ -32,7 +32,7 @@ typeset -gU  path gopath
 # Set the list of directories that Zsh searches for programs.
 path=(
   /usr/local/{bin,sbin}
-  $HOME/bin
+  $HOME/{bin,.bin}
   $path
 )
 
