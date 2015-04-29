@@ -12,11 +12,11 @@
 ;;;; Load paths
 (load "~/.emacs.d/loadpaths.el")
 
-;;;; Load appearance as soon as possible
-(load "~/.emacs.d/appearance")
-
 ;;;; Auto-load packages
 (load "~/.emacs.d/autopackage")
+
+;;;; Load appearance as soon as possible
+(load "~/.emacs.d/appearance")
 
 ;;;; Load defuns
 (load "~/.emacs.d/defuns")
