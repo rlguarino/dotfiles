@@ -34,7 +34,7 @@ autoload -U down-line-or-beginning-search
 alias tmux="tmux -2"
 alias emacs="emacs -nw"
 alias gl="git log --graph --oneline --decorate"
-
+alias grep="grep --color=auto"
 
 autoload -Uz up-line-or-beginning-search
 autoload -Uz down-line-or-beginning-search
