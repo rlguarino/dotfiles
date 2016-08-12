@@ -27,5 +27,8 @@
 
 !.dotfiles-install
 
+!.config/i3
+!.config/fish
+
 .*.swp
 .*.swo
