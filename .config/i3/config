@@ -172,3 +172,6 @@ bindsym $mod+Print exec "sleep 0.2; scrot -q 100 -s '/home/ross/Pictures/Screens
 # Screenshot current focused window
 bindsym Shift+Print exec "scrot -q 100 -u '/home/ross/Pictures/Screenshots/%Y-%m-%d-%H-%M-%S_$wx$h.png'"
 
+
+# lock screen
+bindsym $mod+q exec i3lock -c 111111
